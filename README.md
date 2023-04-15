@@ -1,3 +1,61 @@
+## ReactJS Chapter 16
+It is my coding practice with the TUTORIAL of Dave Gray. 
+
+## Source
+### Dave Gray 的 Reactjs 課程
+https://youtube.com/playlist?list=PL0Zuz27SZ-6PrE9srvEn8nbhOOyxnWXfp
+### Dave Gray 的 YouTube 頻道
+https://www.youtube.com/@DaveGrayTeachesCode
+
+## ReactJS Chapter 16
+   Quick Concept outline
+   中文摘要說明與重點提問
+   
+###  1. Intro 
+        教學影片固定的開頭和摘要說明
+
+###  2. Welcome <Code更動>
+        
+
+###  3. Project Preview
+        專案預覽
+        在 git bash 輸入 npx create-react-app <檔案名稱>
+
+###  4. Quick Setup Guide <Code更動>
+        在 git bash 輸入 npm i react-router-dom -S
+
+###  5. Wrapping the App component in React Router <Code更動>
+        在 index.js 中，
+        從 "react-router-dom" 匯入 { BrowerRouter as Router, Routes, Route }
+        新增 <Router></Router>，將 <Routes></Routes> 放入
+        並將 App 修改為 <Route path="/*" element={<App />} />
+
+###  6. Identifying all of the components <Code更動>
+        在 App.js 匯入 Layout
+        Home, NewPost, PostPage, About, Missing,
+        { Route, Routes, useNavigate }
+        { useState, useEffect }
+
+        新增 Layout.js，
+        在 Layout.js 匯入 Header, Nav, Footer
+
+###  7. Creating the functional components <Code更動>
+        新增 Header.js, Nav.js, Footer.js,
+        Home.js, NewPost.js, PostPage.js, About.js, Missing.js,
+
+###  8. Placing the components in JSX <Code更動>
+        放置 <Header/>, <Nav/>, <Footer/>, 
+        <Home/>, <NewPost/>, <PostPage/>, <About/>, <Missing/>
+
+###  9. Adding routes for the components <Code更動>
+        新增 <Routes></Routes>
+        新增 <Route></Route>， element 為 <Layout .>
+        新增 <Route />，
+        element 為 <Home/>, <NewPost/>, <PostPage/>, <About/>, <Missing/>
+        新增<Route></Route>，path 為 "post"
+        將 <NewPost/>, <PostPage/> 放入
+        在 git bash 輸入 npm start
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
